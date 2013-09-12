@@ -2,8 +2,7 @@ def check_word(testword)
   dictionaryArray=[]
   File.open("/usr/share/dict/words") do |file|
 	file.each do |line|
-	newline = line[0..-2]
-	dictionaryArray.push(newline)
+	dictionaryArray.push(line.chomp)
 	end
   end
 
@@ -19,5 +18,4 @@ def check_word(testword)
 end
 
 arg = gets.chomp
-
 check_word(arg)
