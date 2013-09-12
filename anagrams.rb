@@ -1,5 +1,5 @@
 def anagrams (word1, word2)
-  if(word1.split("").sort.join==word2.split("").join)
+  if(word1.split("").sort.join==word2.split("").sort.join)
 	puts "Win"
   else
 	puts "Lose"
